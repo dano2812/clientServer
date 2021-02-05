@@ -3,3 +3,12 @@
 ################################################################################
 
 /Client/.vs
+/.vs
+/Client/out/build/x64-Debug (default)
+/Server/.vs
+/Server/out/build/x64-Debug (default)
+/Server/Server/build/CMakeFiles
+/Server/Server/build/testAsioServer
+/Server/Server/build/Makefile
+/Server/Server/build/cmake_install.cmake
+/Server/Server/build/CMakeCache.txt

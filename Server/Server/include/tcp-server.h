@@ -8,7 +8,7 @@
 #include <set>
 #include <utility>
 #include <asio.hpp>
-#include <chat_message.h>
+#include <chat-message.h>
 
 using asio::ip::tcp;
 

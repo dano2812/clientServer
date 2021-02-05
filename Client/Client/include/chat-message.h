@@ -45,7 +45,7 @@ public:
     bool DecodeHeader() {
         using namespace std;  // For strncat and atoi.
         char header[kHeaderLength + 1] = "";
-        strncat(header, _data, kHeaderLength);
+        strncat_s(header, _data, kHeaderLength);
         _body_length = atoi(header);
         if (_body_length > kMaxBodyLength) {
             _body_length = 0;
@@ -57,7 +57,7 @@ public:
     void EncodeHeader() {
         using namespace std;  // For sprintf and memcpy.
         char header[kHeaderLength + 1] = "";
-        sprintf(header, "%4d", int(_body_length));
+        sprintf_s(header, "%4d", int(_body_length));
         memcpy(_data, header, kHeaderLength);
     }
 

@@ -14,7 +14,7 @@
 #include <deque>
 #include <thread>
 
-#include "chat_message.h"
+#include "chat-message.h"
 
 typedef std::deque<ChatMessage> chat_message_queue;
 
@@ -51,7 +51,7 @@ private:
     void CheckDeadline();
 
     // Set inactive time.
-    // When time elapses, without clients action, session is automatically closed.
+    // When time elapses without clients action, session is automatically closed.
     void SetInactiveTimeOut();
 
 private:
